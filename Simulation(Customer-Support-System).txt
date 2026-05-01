@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+//write a cpp p that simualtes simple customer support system using switch case statement in that menu option are 1. support 2. billing 3.technical support 4.speak to an agent
+    int n;
+    cout<<"Customer support menu = ";
+    cout<<"\n1. Support";
+    cout<<"\n2. billing";
+    cout<<"\n3. Technical Support";
+    cout<<"\n4. Speak to an agent";
+    cout<<"\nEnter your choice :";
+    cin>>n;
+    
+    switch(n){
+        case 1:
+        cout<<"Welcome to Support!, How may we help you!";
+        break;
+        case 2:
+        cout<<"Welcome to Billing!, How may we help you!";
+        break;
+        case 3:
+        cout<<"Welcome to Technical Support!, How may we help you!";
+        break;
+        case 4:
+        cout<<"Welcome to Speak to an agent!, How may we help you!";
+        break;
+        default:
+        cout<<"Invalid Choice!";
+        break;
+    }
+    return 0;
+}

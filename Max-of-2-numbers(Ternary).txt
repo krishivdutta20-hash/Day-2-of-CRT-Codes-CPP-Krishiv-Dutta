@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    //takes 2 ints as niput from user find max of the two using tenarary conditional operator
+    int a,b;
+    cout<<"Enter value of a :";
+    cin>>a;
+    cout<<"Enter value of b :";
+    cin>>b;
+    
+    int largest = (a > b) ? a : b;
+    cout<<"Max = "<<largest;
+
+    return 0;
+}

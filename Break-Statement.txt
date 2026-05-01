@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    //takes continously takes +ve int from the user and add them to    running sum if the user enters a negative number immediately terminate the loop using break statement and print the final sum
+    
+    while (true){
+      int a,c;
+      cout<<"\nEnter the value of a :";
+      cin>>a;
+      if (a < 0){
+          cout<<" -ve numbers are not allowed!";
+      }
+      else{
+           c += a;
+          cout<<" sum of numbers = "<<c;
+      }
+    }
+
+    return 0;
+}

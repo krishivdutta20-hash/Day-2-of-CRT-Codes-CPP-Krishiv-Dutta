@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main() {
+    
+//write a cpp prgm that takes 3 distinct ints as input and find the largest among them using nested conditional statement
+    int a,b,c;
+    
+    cout<<"Enter value of a : ";
+    cin>>a;
+    cout<<"Enter value of b : ";
+    cin>>b;
+    cout<<"Enter value of c : ";
+    cin>>c;
+    
+    if (a>b){
+        if (a>c){
+            cout<<"a is the greatest!";
+        }
+         else{
+        cout<<"c is the greatest!";
+    }
+    }
+    if (b>a){
+        if (b>c){
+            cout<<"b is the greatest!";
+        }
+    }
+    
+    return 0;
+}

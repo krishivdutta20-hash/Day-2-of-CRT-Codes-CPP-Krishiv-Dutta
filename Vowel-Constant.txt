@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+//wap that takes a single alphabet char as a input from the user and determines whether it is vovel or a consonant
+    char n;
+    cout<<"Enter an alphabet : ";
+    cin>>n;
+    
+    
+    switch(n){
+        case 'a':
+            cout<<"It is a vowel";
+            break;
+        
+        case 'e':
+            cout<<"It is a vowel";
+            break;
+        
+        case 'i':
+            cout<<"It is a vowel";
+            break;
+        
+        case 'o':
+            cout<<"It is a vowel";
+            break;
+        
+        case 'u':
+            cout<<"It is a vowel";
+            break;
+        
+        default:
+            cout<<"It is a constant";
+            break;
+        
+        
+    }
+    return 0;
+}

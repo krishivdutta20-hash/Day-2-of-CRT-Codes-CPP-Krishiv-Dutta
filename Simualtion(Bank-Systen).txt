@@ -1,0 +1,42 @@
+//wap that simulates an atm withdrawl system the program should take the withrawl ammount from the user and whether that transaction is valid or not
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int balance,n;
+    cout<<"Welcome to X Bank! Choose one of the following services to access!";
+    cout<<"\n1. Add Ammount";
+    cout<<"\n2. Withdrawl";
+    cout<<"\n3. Check your balance";
+    cout<<"\nEnter your choice :";
+    cin>>n;
+    
+    balance = 100000000;
+    
+    if (n==1){
+        int add;
+        cout<<"You have chosen Add Ammount! To add ammount to your current balance, please enter the ammount to be added :";
+        cin>>add;
+        balance += add;
+        cout<<"You have successfully added "<<add<<" to your current account";
+         cout<<"Your current balance is "<<balance<<endl;
+    }
+    else if(n==2){
+        int w;
+        cout<<"You have chosen Withdrawl! To withdraw ammount from your current balance, please enter the ammount to be withdrawed :";
+        cin>>w;
+        balance -= w;
+        cout<<"You have successfully withdrawed "<<w<<" from your current account";
+        cout<<"Your current balance is "<<balance<<endl;
+    }
+    else if(n==3){
+        cout<<"You have chosen Check your balance!";
+        cout<<"Your balance is "<<balance<<endl;
+    }
+    else{
+        cout<<"Invalid Choice!";
+    }
+
+    return 0;
+}
